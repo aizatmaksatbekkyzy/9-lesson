@@ -1,0 +1,87 @@
+/* .block-animation {
+  width: 150px;
+  height: 150px;
+  background-color: blueviolet;
+  transition-property: background-color;
+  transition: 2s;
+}
+
+.block-animation:hover {
+  background-color: blue;
+}
+
+.block-animation2 {
+  width: 150px;
+  height: 150px;
+  background-color: chocolate;
+  margin: 20px;
+  transition: all 2s cubic-bezier(0, 1.09, 0.76, 0.85);
+
+  transition-timing-function: cubic-bezier(0,1.09,.76,.85);
+}
+.block-animation2:hover {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+} */
+.block-animation3 {
+  width: 150px;
+  height: 150px;
+  background-color: aquamarine;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  60%{
+    background-color: blue;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+p {
+ /* animation-name: text;
+ animation-duration: 4s;
+ animation-iteration-count: infinite; */
+ animation: text 4s infinite;
+
+}
+ @keyframes text {
+0% {
+margin-left: 100%;
+width: 300%;
+}
+30% , 60%{
+    font-size: 20px;
+    color: red
+}
+100% {
+margin-left: 0;
+width: 100%;
+}
+ }
+
+ .block-animation4 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(221, 0, 206);
+    border-radius: 100%;
+    animation: pulsing 3s infinite;
+ }
+
+ @keyframes pulsing {
+    0% {
+        transform: scale (0.5, 0.5);
+    }
+    50% {
+        transform: scale(2.0, 2.0);
+    }
+    100%  {
+        transform: scale(0.5, 0.5);
+    }
+ }
